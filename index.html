@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta charset="UTF-8">
+		<meta name="author" content="Larissa Cristina Benedito">
+		<meta name="description" content="Jogo em JavaScript - AC05">
+		<meta name="keyword" content="Jogo, Web, Impacta">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+ 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+		<title>Reino Felino II</title>
+
+	</head>
+	<body>
+	<main>
+			<div id="fundoGame" class="fundoGame">
+
+			<audio id="myAudio" autoplay >
+			<source src="mp3/happy.mp3" type="audio/mpeg">
+					O seu navegador não suporta esse tipo de audio.
+			</audio>
+			<button onclick="playAudio()" type="button">
+					<i class="fas fa-play"></i>
+			</button>
+			<button onclick="pauseAudio()" type="button">
+					<i class="fas fa-pause"></i>
+			</button> 
+
+			<div id="loguinho"></div>
+				<div id="inicio" class="inicio" >
+					<img src="image/logo.png" id="loguinho" alt="Instruções do Teclado">
+						<h1><button onclick="start();"> JOGAR  <i class="fas fa-paw"></i></h1>
+					<img src="image/teclado.png" alt="Instruções do Teclado">
+				</div>
+				<div id="gameplay" class="gameplay"></div>
+			</div>
+
+	</main>
+						<h2 class="creditos"> AC05 - Jogos Digitais para a Web -  Larissa "Mewmew @ copyright </h2>
+
+
+<!-- Foi intencional deixar tais elementos aqui, quero que os jogadores possam fazer essas alterações fora e dentro do jogo -->
+		<script>
+		var x = document.getElementById("myAudio"); 
+		function playAudio() { 
+		  x.play(); 
+		} 
+		function pauseAudio() { 
+		  x.pause(); 
+		} 
+		</script>
+
+		<script src="js/jquery-3.5.0.js"></script>
+		<script src="js/gameloop-1.0.js"></script>
+		<script src="js/jquery-collision.js"></script>
+	</body>
+</html>

@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Jua&display=swap');
+
+
+body{
+	background-color: black;
+	background-image: url(../image/backtras.png);
+}
+main{
+	width:950px;
+	height:auto;
+	margin:0 auto;
+}
+button {     
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    color: white;
+
+
+    font-family: 'Architects Daughter', cursive;
+	font-size: 20px;
+}
+
+.fas{
+	color: white;
+}
+.fundoGame{
+	width:950px;
+	height:550px;
+	background-image:url(../image/bg.jpg);
+	border:solid 8px #ffffff;
+	background-repeat: repeat-x;
+	  border-radius: 10px;
+}
+.inicio{
+	padding:5px;
+	text-align:center;
+	margin:0 auto;
+
+}
+.loguinho{
+	background-image:url(../image/logo.png);
+	margin:0 auto;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.inicio h1{
+	color: white;
+	animation: shake 0.5s;
+  	animation-iteration-count: infinite;
+
+}
+
+img{
+	margin-top:9%;
+	width: 55%;
+}
+
+
+.creditos{
+	text-align:center;
+	font-family: 'Gugi', cursive;
+	font-size: 20px;
+	color: white;
+	opacity: 0.6;
+}
+
+
+.player{
+	width:128px;
+	height:128px;
+	background-image:url(../image/player.png);
+	animation:play .5s steps(3) infinite;
+	position:relative;
+	left:50px;
+	top:10px;
+	
+	-webkit-animation:play .5s steps(3) infinite;
+	-moz-animation:play .5s steps(3) infinite;
+	-ms-animation:play .5s steps(3) infinite;
+	-o-animation:play .5s steps(3) infinite;
+}
+@keyframes play{
+	from{background-position:0px;}
+	to{background-position:-384px;}
+}
+.inimigo{
+	width:128px;
+	height:128px;
+	background-image:url(../image/inimigo.png);
+	animation:inimi .5s steps(3) infinite;
+	position:relative;
+	left:800px;
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	
+	-webkit-animation:inimi .5s steps(3) infinite;
+	-moz-animation:inimi .5s steps(3) infinite;
+	-ms-animation:inimi .5s steps(3) infinite;
+	-o-animation:inimi .5s steps(3) infinite;
+}
+@keyframes inimi{
+	from{background-position:0px;}
+	to{background-position:-384px;}
+}
+.npc{
+	width:128px;
+	height:128px;
+	background-image:url(../image/npc.png);
+	animation:npcanima .5s steps(3) infinite;
+	position:relative;
+	top:130px;
+	left:800px;
+	
+	-webkit-animation:npcanima .5s steps(3) infinite;
+	-moz-animation:npcanima .5s steps(3) infinite;
+	-ms-animation:npcanima .5s steps(3) infinite;
+	-o-animation:npcanima .5s steps(3) infinite;
+}
+@keyframes npcanima{
+	from{background-position:0px;}
+	to{background-position:-384px;}
+}
+.disparo{
+	width:64px;
+	height:64px;
+	background-image:url(../image/poop.png);
+	background-repeat:no-repeat;	
+	position:relative;
+}
+.explosao{
+	width:250px;
+	height:241px;
+	position:absolute;
+}
+
+.explosaoPlayer{
+	width:250px;
+	height:241px;
+	position:absolute;
+}
+.amigo{
+	width:21px;
+	height:50px;
+	background-image:url(../image/amigo.png);
+	background-repeat:no-repeat;
+	position:relative;
+	top:60px;
+	left:90px;
+}
+
+.explosaoAmigo{
+	width: px;
+	height: px;
+	position: absolute;
+}
+
+.pontos{
+	font-size:50px;
+	color:#ffffff;
+	border:1px solid #ffffff;
+	text-align:center;
+	width:150px;
+	height:55px;
+	position:absolute;
+	left:610px;
+	top:30px;
+}
+.vitoria{
+	width: 289px;
+	height: 293px;
+	background-image:url(../image/youwin.png);
+	margin:0 auto;
+	
+}
+.vitoria h1{
+	padding-top:50px;
+}
+
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
